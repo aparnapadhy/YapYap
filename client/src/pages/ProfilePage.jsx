@@ -34,9 +34,9 @@ const handleSubmit = async(e)=>{
   return (
     <div className='h-screen bg-cover bg-no-repeat flex items-center justify-center'>
 
-       <div className=' w-5/6  h-[90%] sm:w-9/10 max-w-2xl backdrop-blur-2xl text-white border-2 border-pink-600 flex items-center justify-between max-sm:flex-col-reverse rounded-lg'>
+       <div className=' w-5/6 h-[80%] sm:h-[80%] sm:w-9/10 max-w-2xl backdrop-blur-2xl text-white border-2 border-pink-600 flex items-center justify-center max-sm:flex-col-reverse rounded-lg'>
 
-        <form onSubmit={handleSubmit} className='flex flex-col gap-5 p-10 flex-1'>
+        <form onSubmit={handleSubmit} className='flex flex-col gap-5 p-7 flex-1  h-[50%]'>
           <h3 className='text-lg'>Profile Details</h3>
           <label htmlFor="avatar" className='flex items-center gap-3 cursor-pointer'>
           <input onChange={(e)=>setSelectedImage(e.target.files[0])} type="file" id="avatar" accept='.png, .jpg, .jpeg' hidden/>
@@ -48,7 +48,7 @@ const handleSubmit = async(e)=>{
           <button className="bg-gradient-to-r from-pink-500 to-[#FF8C42] text-white p-2 rounded-full text-lg cursor-pointer" type='submit'>Save</button>
         </form>
 
-        <img className={`max-w-44 aspect-square rounded-full mx-10 max-sm:mt-10 ${selectedImage && 'rounded-full'}`} src={authUser.profilePic || assets.logo_icon} alt="" />
+        <img className={`max-w-25  mt-12 sm:max-w-44  aspect-square rounded-full mx-10 sm:mt-10 ${selectedImage && 'rounded-full'}`} src={authUser.profilePic || assets.logo_icon} alt="" />
 
        </div>
 
