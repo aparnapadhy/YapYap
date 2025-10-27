@@ -36,7 +36,7 @@ const handleSubmit = async(e)=>{
 
        <div className=' w-5/6 h-[80%] sm:h-[80%] sm:w-9/10 max-w-2xl backdrop-blur-2xl text-white border-2 border-pink-600 flex items-center justify-center max-sm:flex-col-reverse rounded-lg'>
 
-        <form onSubmit={handleSubmit} className='flex flex-col gap-5 p-7 flex-1  h-[50%]'>
+        <form onSubmit={handleSubmit} className='flex flex-col gap-5 p-7 flex-1  h-[50%] sm:h-[80%]'>
           <h3 className='text-lg'>Profile Details</h3>
           <label htmlFor="avatar" className='flex items-center gap-3 cursor-pointer'>
           <input onChange={(e)=>setSelectedImage(e.target.files[0])} type="file" id="avatar" accept='.png, .jpg, .jpeg' hidden/>
