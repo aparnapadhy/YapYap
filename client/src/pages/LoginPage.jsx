@@ -34,11 +34,11 @@ const LoginPage = () => {
     <div className="h-screen sm:h-screen bg-cover bg-center flex items-center justify-center gap-8 sm:justify-evenly max-sm:flex-col backdrop-blur-2xl">
 
       {/*-------left-----------*/}
-      <div className="flex flex-col  h-[50vh] justify-center items-center sm:ml-[3vw] sm:my-[30vh]  mt-[270px] ">
-      <img src={assets.logo_icon} alt="" className="w-[70px] sm:w-[10vw]"/>
+      <div className="flex flex-col  h-[50vh] justify-center items-center sm:ml-[3vw] sm:my-[30vh]  mt-[250px] ">
+      <img src={assets.logo_icon} alt="" className="w-[50px] sm:w-[10vw]"/>
       <div className="flex">
-          <p className="text-pink-300  text-[50px] sm:text-[6vw] sm:-mt-[3vh]">Yap</p>
-         <p className="text-pink-500  text-[50px] sm:text-[6vw] sm:-mt-[3vh]">Yap</p>
+          <p className="text-pink-300  text-[40px] sm:text-[6vw] sm:-mt-[3vh]">Yap</p>
+         <p className="text-pink-500  text-[40px] sm:text-[6vw] sm:-mt-[3vh]">Yap</p>
       </div>
       </div>
    
